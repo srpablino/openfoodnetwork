@@ -2,10 +2,10 @@ postgresql_settings: &postgresql_settings
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: your-postgresql-user-here
-  password: your-postgresql-password-here
-  host: your-postgresql-IPv4-address-here
-  database: your-postgresql-database-here
+  username: postgres
+  password: postgres
+  host: 104.155.157.246
+  database: agora
 
 development:
   <<: *postgresql_settings
