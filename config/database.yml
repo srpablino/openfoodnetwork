@@ -1,6 +1,6 @@
 postgresql_settings: &postgresql_settings
   adapter: mysql2
-  encoding: unicode
+  encoding: UTF8
   pool: 5
   username: root
   password: kumo
