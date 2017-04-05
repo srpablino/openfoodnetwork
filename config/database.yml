@@ -1,17 +1,17 @@
-postgresql_settings: &postgresql_settings
+mysql_settings: &mysql_settings
   adapter: mysql2
   encoding: utf8
   pool: 5
   username: root
   password: kumo
-  host: 35.184.252.104
+  socket: /cloudsql/red-agora-py:us-central1:red-agora
   database: agora
 
 development:
-  <<: *postgresql_settings
+  <<: *mysql_settings
 
 production:
-  <<: *postgresql_settings
+  <<: *mysql_settings
 
 test:
   adapter: sqlite3
