@@ -15,7 +15,8 @@
 # [START app_yaml]
 runtime: ruby
 env: flex
-entrypoint: bundle exec ruby ./config/application.rb -p $PORT
+entrypoint: bundle exec rackup -p $PORT
+#entrypoint: bundle exec ruby ./config/application.rb -p $PORT
 
 env_variables:
   MYSQL_USER: root
